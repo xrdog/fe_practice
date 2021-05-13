@@ -1,0 +1,353 @@
+/** 编写功能型原子样式 */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 208px);
+  box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+#root {
+  font-size: 14px;
+  height: 100vh;
+  min-width: 1440px;
+  overflow: auto;
+}
+.w-full {
+  width: 100%;
+}
+.w48 {
+  width: 48px;
+}
+.w64 {
+  width: 64px;
+}
+.w80 {
+  width: 80px;
+}
+.w88 {
+  width: 88px;
+}
+.w96 {
+  width: 96px;
+}
+.w104 {
+  width: 104px;
+}
+.w112 {
+  width: 112px;
+}
+.w120 {
+  width: 120px;
+}
+.w136 {
+  width: 136px;
+}
+.w100p {
+  width: 100% !important;
+}
+.w160 {
+  width: 160px;
+}
+.w200 {
+  width: 200px;
+}
+.w240 {
+  width: 240px;
+}
+.w360 {
+  width: 360px;
+}
+.w800 {
+  width: 800px;
+}
+.no-bd {
+  border: none;
+}
+.no-mb {
+  margin-bottom: 0 !important;
+}
+.no-p {
+  padding: 0 !important;
+}
+.no-m {
+  margin: 0 !important;
+}
+.m-auto {
+  margin: auto;
+}
+.mt1 {
+  margin-top: 1px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mt24 {
+  margin-top: 24px;
+}
+.mt36 {
+  margin-top: 36px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.mb24 {
+  margin-bottom: 24px !important;
+}
+.mb32 {
+  margin-bottom: 32px ;
+}
+.mb36 {
+  margin-bottom: 36px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb76 {
+  margin-bottom: 76px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.mr4 {
+  margin-right: 4px;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mr32 {
+  margin-right: 32px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+.ml8 {
+  margin-left: 8px;
+}
+.ml16 {
+  margin-left: 16px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.p0 {
+  padding: 0;
+}
+.pr0 {
+  padding-right: 0 !important;
+}
+.pl0 {
+  padding-left: 0 !important;
+}
+.pl8 {
+  padding-left: 8px ;
+}
+.pl24 {
+  padding-left: 24px;
+}
+.pt0 {
+  padding-top: 0 !important;
+}
+.pb0 {
+  padding-bottom: 0 !important;
+}
+.p8 {
+  padding: 8px;
+}
+.p24 {
+  padding: 24px;
+}
+.pr24 {
+  padding-right: 24px;
+}
+.pt8 {
+  padding-top: 8px;
+}
+.pr8 {
+  padding-right: 8px;
+}
+.pr16 {
+  padding-right: 16px;
+}
+.bg-white {
+  background: #fff;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.dashed {
+  border-style: dashed;
+}
+.f-red {
+  color: #fe5500;
+}
+.f-black {
+  color: rgba(0, 0, 0, 0.85);
+}
+.f-orange {
+  color: #ff9100;
+}
+.f-12 {
+  font-size: 12px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.f-w300 {
+  font-weight: 300;
+}
+.f-normal {
+  font-weight: 400;
+}
+.f-break {
+  word-break: break-all;
+}
+.f-PingFangSC {
+  font-family: 'PingFangSC';
+}
+.img-bd {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.tag-layout-between {
+  width: 100%;
+  display: inline-flex;
+  flex: 1;
+  justify-content: space-between;
+}
+/* ------------------flex------------------ */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.column-right {
+  text-align: right;
+}
+.single-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+/** 幸福里PC中台专用样式覆盖表 */
+/** -----------------Header------------------ */
+/* 顶栏右对齐 */
+.header-align-right {
+  text-align: right;
+}
+.header-fixed {
+  position: fixed;
+  /**
+  *
+  */
+  z-index: 19;
+  width: calc(100% - 208px);
+}
+/* 头像和文字对齐方式 */
+.avatar {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 16px;
+}
+.logo-box {
+  position: relative;
+  width: 208px;
+  padding: 16px 16px 12px;
+}
+.logo-box > img {
+  height: 100%;
+  width: 100%;
+}
+/** -----------------典型table页样式------------------ */
+.page-table {
+  padding: 24px 32px;
+  background: #fff;
+}
+.table__filter-box-wrapper {
+  margin: 0 -36px;
+}
+.no-mb--cell .ant-row.ant-form-item {
+  margin-bottom: 0;
+}
+.ant-form-inline.table__filter-box {
+  text-align: justify;
+}
+.ant-form-inline .table__filter-item {
+  margin: 0 36px 16px;
+  width: 324px;
+}
+.ant-form-inline .ant-form-item-label {
+  width: 84px;
+}
+.large-label .ant-form-item-label {
+  width: 96px !important;
+}
+.ant-table-cell .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+  min-width: 160px;
+  z-index: 99999;
+}
+/* 典型表格控制区 */
+.table__ctrl-panel {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+  justify-content: flex-end;
+}
+/* ------------------flex------------------ */
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.column-right {
+  text-align: right;
+}
+/** -----------radio -------- */
+.radio-option-vertical {
+  display: 'block';
+  height: '30px';
+  line-height: '30px';
+}
+/** -----------------页面定制区域------------------ */
+.page-box {
+  margin: 24px;
+  background: transparent;
+  position: relative;
+}
+/** -----------------404页面------------------ */
+.no-match-box {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
