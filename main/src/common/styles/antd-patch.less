@@ -1,0 +1,308 @@
+/** 幸福里PC中台专用样式覆盖表 */
+
+/** -----------------Header------------------ */
+
+/* 顶栏右对齐 */
+.header-align-right {
+  text-align: right;
+}
+
+.header-fixed {
+  position: fixed;
+
+  /**
+  *
+  */
+  z-index: 19;
+  width: calc(100% - 208px);
+}
+
+/* 头像和文字对齐方式 */
+.avatar {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 16px; 
+}
+
+.logo-box {
+  position: relative;
+  width: 208px;
+  padding: 16px 16px 12px;
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/** -----------------SiderMenu------------------ */
+
+/* 有子菜单时一级菜单颜色 */
+.ant-menu-submenu-title {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/** 二级菜单选中时 */
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #fff;
+}
+
+/* 二级菜单下拉箭头 */
+.ant-menu-submenu-active .ant-menu-submenu-arrow {
+  color: @primary-color;
+  background-color: @primary-color;
+}
+
+/* 默认状态下小箭头样式 */
+.ant-menu-submenu-arrow {
+  color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+/* 展开和选择时小箭头样式 */
+.ant-menu-dark
+  .ant-menu-submenu-open
+  > .ant-menu-submenu-title
+  > .ant-menu-submenu-arrow::before,
+.ant-menu-dark
+  .ant-menu-submenu-selected
+  > .ant-menu-submenu-title
+  > .ant-menu-submenu-arrow::before,
+.ant-menu-dark
+  .ant-menu-submenu-open
+  > .ant-menu-submenu-title
+  > .ant-menu-submenu-arrow::after,
+.ant-menu-dark
+  .ant-menu-submenu-selected
+  > .ant-menu-submenu-title
+  > .ant-menu-submenu-arrow::after {
+  color: #fff;
+  background: #fff;
+}
+
+/** -----------------TimerPicker------------------ */
+
+.ant-picker-today-btn,
+.ant-picker-today-btn:hover,
+.ant-picker-now-btn,
+.ant-picker-now-btn:hover {
+  color: @primary-color!important;
+}
+
+/** -----------------页面定制区域------------------ */
+// 所有页面容器类
+.page-box {
+  margin: 24px;
+  background: transparent;
+  position: relative;
+}
+
+/** -----------------404页面------------------ */
+
+.no-match-box {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** -----------------典型table页样式------------------ */
+//表格页面容器类
+.page-table {
+  padding: 24px 32px;
+  background: #fff;
+}
+
+.table__filter-box-wrapper {
+  margin: 0 -36px;
+}
+
+.no-mb--cell .ant-row.ant-form-item {
+  margin-bottom: 0;
+}
+
+
+//典型列表页过滤器区域下方外边距
+.ant-form-inline.table__filter-box {
+  text-align: justify;
+}
+//inline布局的过滤项
+.ant-form-inline {
+  .table__filter-item {
+    margin: 0 36px 16px;
+    width: 324px;
+  }
+
+  .ant-form-item-label {
+    width: 84px;
+  }
+}
+
+.large-label {
+  .ant-form-item-label {
+    width: 96px !important;
+  }
+}
+
+
+// table中有可编辑行时，防止表单校验信息将cell撑大
+.ant-table-cell .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+  min-width: 160px;
+  z-index: 99999;
+}
+
+/* 典型表格控制区 */
+.table__ctrl-panel {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/** -----------------pagination------------------ */
+.ant-table-pagination.ant-pagination {
+  margin: 24px 0 0;
+}
+
+/** -----------------Tabs栏------------------ */
+.tabs > .ant-tabs-nav {
+  background: #fff;
+  padding: 4px 24px;
+}
+.tabs-left > .ant-tabs-nav {
+  background: #fff;
+  padding: 4px 24px 4px 0;
+}
+
+/** -----------------Card------------------ */
+.ant-card-head,
+.ant-card-body {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.ant-card-head-title {
+  .subtitle {
+     font-size: 12px;
+     font-weight: 400;
+  }
+}
+
+/** -----------------Modal------------------ */
+.ant-modal-title {
+  .subtitle {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .desc {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+/** -----------------Tag Message------------------ */
+.tag-message {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.tag-message-full {
+  width: 100%;
+}
+
+/** -----------------表单中穿插文字------------------ */
+.label {
+  height: 32px;
+  line-height: 32px;
+}
+
+.page-head-btn-group {
+  margin: 16px 24px;
+}
+
+.modal__title-link {
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+  line-height: 16px;
+  padding-top: 4px;
+}
+
+/* ------------------Tooltip------------------ */
+.tooltip-white {
+  background: #fff;
+  color: rgba(0,0,0,0.85);
+}
+
+/* ------------------Spin------------------ */
+.global-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ------------------Button------------------ */
+//按钮
+.btn {
+  &-info {
+    background: #1890ff;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    &:hover,
+    &:active {
+      outline: none;
+      box-shadow: none;
+      background: #fff;
+      color: #1890ff;
+      border: 1px solid #1890ff;
+    }
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      background: #1890ff;
+      color: #fff;
+      border: 1px solid #1890ff;
+    }
+  }
+  // 主色outline按钮
+  &-primary--outline {
+    background: transparent;
+    color: #ff9100;
+    border: 1px solid #ff9100;
+  }
+}
+
+/* ------------------表单layout------------------ */
+.ant-form-inline .ant-form-item > .ant-form-item-control {
+  overflow: hidden;
+}
+
+.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  overflow: hidden;
+}
+
+
+/* ------------------flex------------------ */
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-right {
+  text-align: right;
+}
+
+/** -----------radio -------- */
+.radio-option-vertical {
+    display: 'block';
+    height: '30px';
+    line-height: '30px';
+}

@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-
+import Router from "./router";
 const App: FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>11111</h1>
+        <Router />
       </header>
     </div>
   );

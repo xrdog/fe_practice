@@ -1,0 +1,448 @@
+/** 编写功能型原子样式 */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 208px);
+  box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+#root {
+  font-size: 14px;
+  height: 100vh;
+  min-width: 1440px;
+  overflow: auto;
+}
+
+.w {
+  &-full {
+    width: 100%;
+  }
+  &48 {
+    width: 48px;
+  }
+  &64 {
+    width: 64px;
+  }
+  &80 {
+    width: 80px;
+  }
+  &88 {
+    width: 88px;
+  }
+  &96 {
+    width: 96px;
+  }
+  &104 {
+    width: 104px;
+  }
+  &112 {
+    width: 112px;
+  }
+  &120 {
+    width: 120px;
+  }
+  &136 {
+    width: 136px;
+  }
+  &100p {
+    width: 100% !important;
+  }
+  &160 {
+    width: 160px;
+  }
+  &200 {
+    width: 200px;
+  }
+  &240 {
+    width: 240px;
+  }
+  &360 {
+    width: 360px;
+  }
+  &800 {
+    width: 800px;
+  }
+}
+
+// 禁用
+.no {
+  //禁用所有border边框
+  &-bd {
+    border: none;
+  }
+  &-mb {
+    margin-bottom: 0 !important;
+  }
+  &-p {
+    padding: 0 !important;
+  }
+  &-m {
+    margin: 0 !important;
+  }
+
+}
+
+// margin外边界
+.m {
+  &-auto {
+    margin: auto;
+  }
+
+  &t1 {
+    //用于补充非阴影设计缝隙
+    margin-top: 1px;
+  }
+
+  &t8 {
+    margin-top: 8px;
+  }
+  &t16 {
+    margin-top: 16px;
+  }
+  &t24 {
+    margin-top: 24px;
+  }
+  &t36 {
+    margin-top: 36px;
+  }
+  &t40 {
+    margin-top: 40px;
+  }
+  &b8 {
+    margin-bottom: 8px;
+  }
+  &b16 {
+    margin-bottom: 16px;
+  }
+  &b24 {
+    margin-bottom: 24px !important;
+  }
+  &b32 {
+    margin-bottom: 32px ;
+  }
+  &b36 {
+    margin-bottom: 36px;
+  }
+  &b40 {
+    margin-bottom: 40px;
+  }
+  &b76 {
+    margin-bottom: 76px;
+  }
+  &b80 {
+    margin-bottom: 80px;
+  }
+  &r4 {
+    margin-right: 4px;
+  }
+  &r8 {
+    margin-right: 8px;
+  }
+  &r16 {
+    margin-right: 16px;
+  }
+  &r32 {
+    margin-right: 32px;
+  }
+  &r40 {
+    margin-right: 40px;
+  }
+  &l8 {
+    margin-left: 8px;
+  }
+  &l16 {
+    margin-left: 16px;
+  }
+  &l32 {
+    margin-left: 32px;
+  }
+  &l40 {
+    margin-left: 40px;
+  }
+}
+
+// padding内补白
+.p {
+ &0 {
+   padding: 0;
+ }
+ // 常用于图片内补白
+ &r0 {
+   padding-right: 0 !important;
+ }
+ &l0 {
+   padding-left: 0 !important;
+ }
+ &l8 {
+   padding-left: 8px ;
+ }
+ &l24 {
+   padding-left: 24px;
+ }
+ &t0 {
+   padding-top: 0 !important;
+ }
+ &b0 {
+   padding-bottom: 0 !important;
+ }
+ &8 {
+   padding: 8px;
+ }
+ // 常用于页面容器
+ &24 {
+   padding: 24px;
+ }
+
+
+
+ &r24 {
+   padding-right: 24px;
+ }
+
+ &t8 {
+   padding-top: 8px;
+ }
+ &r8 {
+   padding-right: 8px;
+ }
+ &r16 {
+   padding-right: 16px;
+ }
+}
+
+// 背景色
+.bg {
+ &-white {
+   background: #fff;
+ }
+}
+
+// 对齐
+.align {
+ &-left {
+   text-align: left;
+ }
+ &-right {
+   text-align: right;
+ }
+ &-center {
+   text-align: center;
+ }
+}
+
+.block {
+  display: block;
+}
+
+// 盒模型
+.inline {
+ display: inline-block;
+}
+
+
+.dashed {
+ border-style: dashed;
+}
+
+// 字体
+.f {
+  &-red {
+    color: #fe5500;
+  }
+  &-black {
+    color: rgba(0, 0, 0, 0.85);
+  }
+  &-orange {
+    color: #ff9100;
+  }
+  &-12 {
+    font-size: 12px;
+  }
+  &-14 {
+    font-size: 14px;
+  }
+  &-16 {
+    font-size: 16px;
+  }
+  &-w300 {
+    font-weight: 300;
+  }
+  &-normal {
+    font-weight: 400;
+  }
+  &-break {
+    word-break: break-all;
+  }
+  &-PingFangSC {
+    font-family: 'PingFangSC';
+  }
+}
+
+//图片
+.img {
+ &-bd {
+   border: 1px solid rgba(0, 0, 0, 0.15);
+ }
+}
+
+
+.tag-layout-between {
+ width: 100%;
+ display: inline-flex;
+ flex: 1;
+ justify-content: space-between;
+}
+
+/* ------------------flex------------------ */
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-right {
+  text-align: right;
+}
+
+//单行省略
+.single-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+
+/** 幸福里PC中台专用样式覆盖表 */
+
+/** -----------------Header------------------ */
+
+/* 顶栏右对齐 */
+.header-align-right {
+  text-align: right;
+}
+
+.header-fixed {
+  position: fixed;
+
+  /**
+  *
+  */
+  z-index: 19;
+  width: calc(100% - 208px);
+}
+
+/* 头像和文字对齐方式 */
+.avatar {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 16px; 
+}
+
+.logo-box {
+  position: relative;
+  width: 208px;
+  padding: 16px 16px 12px;
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+/** -----------------典型table页样式------------------ */
+//表格页面容器类
+.page-table {
+  padding: 24px 32px;
+  background: #fff;
+}
+
+.table__filter-box-wrapper {
+  margin: 0 -36px;
+}
+
+.no-mb--cell .ant-row.ant-form-item {
+  margin-bottom: 0;
+}
+
+
+//典型列表页过滤器区域下方外边距
+.ant-form-inline.table__filter-box {
+  text-align: justify;
+}
+//inline布局的过滤项
+.ant-form-inline {
+  .table__filter-item {
+    margin: 0 36px 16px;
+    width: 324px;
+  }
+
+  .ant-form-item-label {
+    width: 84px;
+  }
+}
+
+.large-label {
+  .ant-form-item-label {
+    width: 96px !important;
+  }
+}
+
+
+// table中有可编辑行时，防止表单校验信息将cell撑大
+.ant-table-cell .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+  min-width: 160px;
+  z-index: 99999;
+}
+
+/* 典型表格控制区 */
+.table__ctrl-panel {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+
+
+
+/* ------------------flex------------------ */
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-right {
+  text-align: right;
+}
+
+/** -----------radio -------- */
+.radio-option-vertical {
+    display: 'block';
+    height: '30px';
+    line-height: '30px';
+}
+
+
+/** -----------------页面定制区域------------------ */
+// 所有页面容器类
+.page-box {
+  margin: 24px;
+  background: transparent;
+  position: relative;
+}
+
+/** -----------------404页面------------------ */
+
+.no-match-box {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
