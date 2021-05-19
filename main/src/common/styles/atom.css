@@ -326,7 +326,15 @@
 /* ------------------flex------------------ */
 .flex-space-between {
   display: flex;
-  justify-content: space-between;
+}
+.flex-justify-content-center {
+  justify-content: center;
+}
+.flex-direction-clomu {
+  flex-direction: column;
+}
+.flex-direction-row {
+  flex-direction: row;
 }
 .column-right {
   text-align: right;
