@@ -5,7 +5,7 @@ const flex: CSSProperties = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "800px",
+  height:'100%',
   flexDirection: "column",
 };
 

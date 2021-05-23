@@ -20,8 +20,8 @@ const Tick: FC = () => {
   console.log("this is Tick");
   return (
     <>
-      {tick}
       <span className="w-full inline align-center">
+        {tick}
         <Button type="primary" onClick={onClick}>
           通过JS触发
         </Button>
